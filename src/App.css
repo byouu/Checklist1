@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #F9F9F9;
+}
+.wrap{
+  font-family: 'Raleway';
+  background: linear-gradient(90deg, rgba(229,117,117,1) 1.5%, rgba(255,255,255,1) 1.5%, rgba(255,255,255,1) 1.5%);
+  margin: 5em auto;
+  max-width: 25em;
+  height: 42em;
+  padding: 1em 0 1em 1em;
+  display:flex;
+  flex-direction: column;
+  color: #303337;
+  /* overflow-y: auto; */
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
+  padding:1em;
+}
+.menu img{
+  width: 1.5em;
+  fill:#303337;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.exit img{
+  width: 1.5em;
+  fill:#303337;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-container{
+  margin-left: 10%;
+  padding: 1.5em 0;
+  border-bottom: thin solid #C7C7C7;
+  margin-bottom: 1em;
+}
+
+.title-container h1{
+  font-size: 2.5em;
+  padding: 0.3em 0;
+}
+
+.title-container .progress{
+  color: #C7C7C7;
+}
+
+.list-container{
+  height: 100%;
+}
+
+.list-item-container{
+  padding: 1em 1em 1em 0;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-title-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-title-container .list-title{
+  font-weight: 600;
+  font-size: 1.4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-title-container .date{
+  margin-top: 0.2em;
+  color: #C7C7C7;
+}
+
+input[type=checkbox]{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.button-wrap{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em;
+}
+
+.add-btn{
+  width: 5em;
+  height: 5em;
+  border-radius: 0.4em;
+  background-color: #E67575;
+  border: none;
+}
+
+.add-btn img{
+  width: 2.5em;
+  fill: white;
 }
